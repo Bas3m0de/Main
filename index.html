@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dövmeci - Profesyonel Dövme Hizmetleri</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700;800&family=Eater&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <span class="brand-text">Tattoo</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Ana Sayfa</a></li>
+                <li><a href="#services">Hizmetler</a></li>
+                <li><a href="#artists">Sanatçılar</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#contact">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress">
+        <div class="progress-circle">
+            <svg class="progress-ring" width="60" height="60">
+                <circle
+                    class="progress-ring-circle"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                    fill="transparent"
+                    r="28"
+                    cx="30"
+                    cy="30"
+                />
+                <circle
+                    class="progress-ring-fill"
+                    stroke="#ff6b6b"
+                    stroke-width="2"
+                    fill="transparent"
+                    r="28"
+                    cx="30"
+                    cy="30"
+                />
+            </svg>
+            <div class="progress-arrow">↑</div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="hero-tagline">SONRAKİ BAŞYAPITINI KEŞFET</p>
+            <h1 class="hero-title">Hasan Berat</h1>
+            <div class="hero-divider"></div>
+            <p class="hero-subtitle">BİR ÖMÜRLÜK İZ</p>
+            
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <div class="process-content">
+                <!-- Left Column -->
+                <div class="process-info">
+                    <span class="process-tag">SÜRECİMİZ</span>
+                    <h2 class="process-title">
+                        <span class="title-part">NASIL</span>
+                        <span class="title-part outlined">İŞLİYOR</span>
+                    </h2>
+                    <p class="process-description">
+                        Dövmeci'de dövme veya piercing yaptırmak hiç bu kadar kolay olmamıştı—fikrinizi hayal edin, 
+                        randevunuzu alın ve sadece birkaç adımda taze bir sanat eseriyle ayrılın.
+                    </p>
+                    
+                    <h3 class="why-choose">Neden Dövmeci'yi Seçmelisiniz?</h3>
+                    <ul class="benefits-list">
+                        <li>10+ yıl deneyimli, lisanslı ve sertifikalı sanatçılar</li>
+                        <li>Geniş stil yelpazesi</li>
+                        <li>%100 memnuniyet garantisi—gerekli yerlerde rötuş dahil</li>
+                        <li>Hastane kalitesinde sterilizasyon ve tek kullanımlık iğneler/takılar</li>
+                    </ul>
+                </div>
+
+                <!-- Right Column -->
+                <div class="process-steps">
+                    <div class="step-item active">
+                        <div class="step-header">
+                            <span class="step-number">1</span>
+                            <h3 class="step-title">ÜCRETSİZ KONSÜLTASYON</h3>
+                            <span class="step-toggle">−</span>
+                        </div>
+                        <div class="step-content">
+                            <ul class="step-details">
+                                <li>Rahat, baskısız bir ortamda dövme veya piercing fikirlerinizi tartışın</li>
+                                <li>Sanatçılarımızdan biriyle tasarım seçenekleri, yerleşim, boyut ve stil keşfedin</li>
+                                <li>Hijyen standartlarımız, mürekkep ve takı seçenekleri, fiyatlandırma ve zaman çizelgesi hakkında bilgi edinin</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-header">
+                            <span class="step-number">2</span>
+                            <h3 class="step-title">RANDEVU ALIN</h3>
+                            <span class="step-toggle">+</span>
+                        </div>
+                        <div class="step-content">
+                            <ul class="step-details">
+                                <li>Size uygun tarih ve saati belirleyin</li>
+                                <li>Ön ödeme ve güvenlik bilgilerini tamamlayın</li>
+                                <li>Randevu öncesi hazırlık talimatlarını alın</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="step-item">
+                        <div class="step-header">
+                            <span class="step-number">3</span>
+                            <h3 class="step-title">DÖVMENİZİ YAPTIRIN</h3>
+                            <span class="step-toggle">+</span>
+                        </div>
+                        <div class="step-content">
+                            <ul class="step-details">
+                                <li>Profesyonel sanatçımızla dövmenizi yaptırın</li>
+                                <li>Bakım talimatlarını öğrenin</li>
+                                <li>Yeni sanat eserinizle ayrılın</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Marquee -->
+    <section class="services-marquee">
+        <div class="services-track" id="servicesTrack">
+            <div class="services-group" id="servicesGroup">
+                <span class="service-text">DESIGN WORK - TATTOOING - COVER UPS - PIERCING - DESIGN WORK - COVER UPS - TATTOOING - PIERCING - DESIGN WORK - TATTOOING - COVER UPS - PIERCING - DESIGN WORK - COVER UPS - TATTOOING - PIERCING - DESIGN WORK - TATTOOING - COVER UPS - PIERCING - DESIGN WORK - COVER UPS - TATTOOING - PIERCING</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Marquee - Bottom -->
+    <section class="services-marquee">
+        <div class="services-track" id="servicesTrack2">
+            <div class="services-group" id="servicesGroup2">
+                <span class="service-text">DESIGN WORK - TATTOOING - COVER UPS - PIERCING - DESIGN WORK - COVER UPS - TATTOOING - PIERCING - DESIGN WORK - TATTOOING - COVER UPS - PIERCING - DESIGN WORK - COVER UPS - TATTOOING - PIERCING - DESIGN WORK - TATTOOING - COVER UPS - PIERCING - DESIGN WORK - COVER UPS - TATTOOING - PIERCING</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Artists Section -->
+    <section id="artists" class="artists">
+        <div class="container">
+            <p class="artists-team">Takımımız</p>
+            <h2 class="artists-title">
+                <span class="artists-title-part outlined">Sanatçı</span>
+            </h2>
+        </div>
+        
+        <div class="artists-content">
+            <div class="artist-main">
+                <div class="artist-image">
+                    <img src="Artist_2.png" alt="Dövme Sanatçısı">
+                </div>
+                <div class="artist-info">
+                    <h3 class="artist-name">Hasan Berat</h3>
+                    <p class="artist-role">Dövme Sanatçısı</p>
+                    <button class="artist-btn">Daha Fazla Bilgi</button>
+                </div>
+            </div>
+            
+            <div class="artists-navigation">
+                <div class="nav-dots">
+                    <div class="nav-dot active"></div>
+                    <div class="nav-dot"></div>
+                    <div class="nav-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">PORTFÖYÜMÜZ</h2>
+            <hr>
+        </div>
+
+        <!-- Portfolio Marquee - First Row -->
+        <div class="portfolio-wrap">
+            <div class="portfolio-track" id="portfolioTrack1">
+                <div class="portfolio-group" id="portfolioGroup1">
+                    <div class="portfolio-item">
+                        <img src="p_1.png" alt="Dövme Çalışması 1">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Özel Tasarım</h4>
+                                <p>Kişiye özel dövme</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="p_2.png" alt="Dövme Çalışması 2">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Geleneksel Dövme</h4>
+                                <p>Klasik dövme stili</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="p_3.png" alt="Dövme Çalışması 3">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Modern Tasarım</h4>
+                                <p>Çağdaş dövme sanatı</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="p_4.png" alt="Dövme Çalışması 4">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Detaylı İşçilik</h4>
+                                <p>İnce detaylar</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="p_5.png" alt="Dövme Çalışması 5">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Renkli Dövme</h4>
+                                <p>Canlı renkler</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="p_6.png" alt="Dövme Çalışması 6">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Minimalist</h4>
+                                <p>Sade çizgiler</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio Marquee - Second Row -->
+        <div class="portfolio-wrap">
+            <div class="portfolio-track" id="portfolioTrack2">
+                <div class="portfolio-group" id="portfolioGroup2">
+                    <div class="portfolio-item">
+                        <img src="p_7.png" alt="Dövme Çalışması 7">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Sanatsal</h4>
+                                <p>Sanat eseri</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="p_8.png" alt="Dövme Çalışması 8">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Özel Kompozisyon</h4>
+                                <p>Benzersiz tasarım</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="p_9.png" alt="Dövme Çalışması 9">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Geometrik Tasarım</h4>
+                                <p>Matematiksel güzellik</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="p_10.png" alt="Dövme Çalışması 10">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Realistik Portre</h4>
+                                <p>Gerçekçi çizim</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="p_11.png" alt="Dövme Çalışması 11">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Watercolor Stil</h4>
+                                <p>Sulu boya efekti</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="p_12.png" alt="Dövme Çalışması 12">
+                        <div class="portfolio-overlay">
+                            <div class="portfolio-info">
+                                <h4>Blackwork</h4>
+                                <p>Siyah işçilik</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <p class="contact-tagline">LET'S GET IN TOUCH</p>
+            <h2 class="contact-title">CONTACT US</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc6600" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>LOCATION</h4>
+                                <p>Calea Dorobanţi 36-40, Bucureşti 010553 Romania</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc6600" stroke-width="2">
+                                    <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                                    <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>MOBILE PHONE</h4>
+                                <p>0747 459 722</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc6600" stroke-width="2">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>EMAIL</h4>
+                                <p>zodiacink@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#cc6600" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12,6 12,12 16,14"></polyline>
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>WORK TIME</h4>
+                                <p>Monday-Friday: 11:00 - 21:00<br>Saturday-Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2851.123456789!2d26.123456!3d44.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f123456789ab%3A0x1234567890abcdef!2sCalea%20Doroban%C8%9Bi%2036-40%2C%20Bucure%C8%99ti%20010553%2C%20Rom%C3%A2nia!5e0!3m2!1str!2str!4v1234567890123!5m2!1str!2str" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="654774a2bed254bcf524ae0d_Tattoo_Icon.svg" alt="Dövmeci Logo" class="footer-logo">
+                    <span class="footer-brand-text">DÖVMECİ</span>
+                </div>
+                <div class="social-links">
+                    <a href="#" class="social-link">
+                        <img src="65466cb30fe83746170e0cc8_Instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="65466f5367ae354bf93b6dec_Facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="#" class="social-link">
+                        <img src="65466fc4b68c5cc835a77d68_Google.svg" alt="Google">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Dövmeci. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
