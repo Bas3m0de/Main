@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700;800&family=Eater&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600;700;800&family=Eater&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Header -->
@@ -16,7 +16,12 @@
             <div class="nav-brand">
                 <span class="brand-text">Tattoo</span>
             </div>
-            <ul class="nav-menu">
+            <button class="nav-toggle" id="navToggle">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="#home">Ana Sayfa</a></li>
                 <li><a href="#services">Hizmetler</a></li>
                 <li><a href="#artists">Sanatçılar</a></li>
@@ -60,7 +65,7 @@
             <h1 class="hero-title">Hasan Berat</h1>
             <div class="hero-divider"></div>
             <p class="hero-subtitle">BİR ÖMÜRLÜK İZ</p>
-            
+            <a href="#contact" class="hero-cta">İletişim</a>
         </div>
     </section>
 
@@ -80,7 +85,7 @@
                         randevunuzu alın ve sadece birkaç adımda taze bir sanat eseriyle ayrılın.
                     </p>
                     
-                    <h3 class="why-choose">Neden Dövmeci'yi Seçmelisiniz?</h3>
+                    <h3 class="why-choose">Neden Bizi Seçmelisiniz?</h3>
                     <ul class="benefits-list">
                         <li>10+ yıl deneyimli, lisanslı ve sertifikalı sanatçılar</li>
                         <li>Geniş stil yelpazesi</li>
@@ -163,7 +168,8 @@
         <div class="container">
             <p class="artists-team">Takımımız</p>
             <h2 class="artists-title">
-                <span class="artists-title-part outlined">Sanatçı</span>
+                <span class="artists-title-part">THE</span>
+                <span class="artists-title-part outlined">ARTISTS</span>
             </h2>
         </div>
         
@@ -174,7 +180,7 @@
                 </div>
                 <div class="artist-info">
                     <h3 class="artist-name">Hasan Berat</h3>
-                    <p class="artist-role">Dövme Sanatçısı</p>
+                    <p class="artist-role">Profesyonel Dövme Sanatçısı</p>
                     <button class="artist-btn">Daha Fazla Bilgi</button>
                 </div>
             </div>
@@ -214,7 +220,7 @@
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
                                 <h4>Geleneksel Dövme</h4>
-                                <p>Klasik dövme stili</p>
+                                <p>Klasik ve zamansız dövme stili</p>
                             </div>
                         </div>
                     </div>
@@ -241,7 +247,7 @@
                         <div class="portfolio-overlay">
                             <div class="portfolio-info">
                                 <h4>Renkli Dövme</h4>
-                                <p>Canlı renkler</p>
+                                <p>Canlı ve parlak renklerle tasarım</p>
                             </div>
                         </div>
                     </div>
@@ -325,8 +331,8 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <p class="contact-tagline">LET'S GET IN TOUCH</p>
-            <h2 class="contact-title">CONTACT US</h2>
+            <p class="contact-tagline">İLETİŞİME GEÇELİM</p>
+            <h2 class="contact-title">İLETİŞİM</h2>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-details">
@@ -338,8 +344,8 @@
                                 </svg>
                             </div>
                             <div class="contact-text">
-                                <h4>LOCATION</h4>
-                                <p>Calea Dorobanţi 36-40, Bucureşti 010553 Romania</p>
+                                <h4>KONUM</h4>
+                                <p>Avcılar Merkez Mahallesi, Atatürk Caddesi No:45/A, Avcılar/İstanbul</p>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -350,7 +356,7 @@
                                 </svg>
                             </div>
                             <div class="contact-text">
-                                <h4>MOBILE PHONE</h4>
+                                <h4>CEP TELEFONU</h4>
                                 <p>0747 459 722</p>
                             </div>
                         </div>
@@ -362,8 +368,8 @@
                                 </svg>
                             </div>
                             <div class="contact-text">
-                                <h4>EMAIL</h4>
-                                <p>zodiacink@gmail.com</p>
+                                <h4>E-POSTA</h4>
+                                <p>hasanberat@gmail.com</p>
                             </div>
                         </div>
                         <div class="contact-item">
@@ -374,15 +380,15 @@
                                 </svg>
                             </div>
                             <div class="contact-text">
-                                <h4>WORK TIME</h4>
-                                <p>Monday-Friday: 11:00 - 21:00<br>Saturday-Sunday: Closed</p>
+                                <h4>ÇALIŞMA SAATLERİ</h4>
+                                <p>Pazartesi-Cuma: 11:00 - 21:00<br>Cumartesi-Pazar: Kapalı</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="contact-map">
                     <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2851.123456789!2d26.123456!3d44.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40b1f123456789ab%3A0x1234567890abcdef!2sCalea%20Doroban%C8%9Bi%2036-40%2C%20Bucure%C8%99ti%20010553%2C%20Rom%C3%A2nia!5e0!3m2!1str!2str!4v1234567890123!5m2!1str!2str" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.123456789!2d28.712345!3d40.987654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab5b123456789ab%3A0x1234567890abcdef!2sAvc%C4%B1lar%20Merkez%20Mahallesi%2C%20Atat%C3%BCrk%20Caddesi%20No%3A45%2FA%2C%20Avc%C4%B1lar%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1234567890123!5m2!1str!2str" 
                         width="100%" 
                         height="400" 
                         style="border:0;" 
@@ -400,18 +406,18 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <img src="654774a2bed254bcf524ae0d_Tattoo_Icon.svg" alt="Dövmeci Logo" class="footer-logo">
+                    <img src="654774a2bed254bcf524ae0d_Tattoo_Icon.svg" alt="Dövmeci Logosu" class="footer-logo">
                     <span class="footer-brand-text">DÖVMECİ</span>
                 </div>
                 <div class="social-links">
                     <a href="#" class="social-link">
-                        <img src="65466cb30fe83746170e0cc8_Instagram.svg" alt="Instagram">
+                        <img src="65466cb30fe83746170e0cc8_Instagram.svg" alt="Instagram Hesabımız">
                     </a>
                     <a href="#" class="social-link">
-                        <img src="65466f5367ae354bf93b6dec_Facebook.svg" alt="Facebook">
+                        <img src="65466f5367ae354bf93b6dec_Facebook.svg" alt="Facebook Sayfamız">
                     </a>
                     <a href="#" class="social-link">
-                        <img src="65466fc4b68c5cc835a77d68_Google.svg" alt="Google">
+                        <img src="65466fc4b68c5cc835a77d68_Google.svg" alt="Google İşletme">
                     </a>
                 </div>
             </div>

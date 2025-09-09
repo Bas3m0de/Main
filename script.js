@@ -12,11 +12,34 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Mobile menu toggle (if needed in future)
-function toggleMobileMenu() {
-    const navMenu = document.querySelector('.nav-menu');
-    navMenu.classList.toggle('active');
-}
+// Mobile menu toggle
+document.addEventListener('DOMContentLoaded', function() {
+    const navToggle = document.getElementById('navToggle');
+    const navMenu = document.getElementById('navMenu');
+    
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            if (navMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        });
+        
+        // Close menu when clicking on a link
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', function() {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+    }
+});
 
 // Contact section functionality (if needed)
 // You can add contact-related functionality here
@@ -53,6 +76,23 @@ window.addEventListener('scroll', function() {
     const circumference = 175.93; // 2 * PI * 28
     const offset = circumference - (scrollPercent / 100) * circumference;
     progressFill.style.strokeDashoffset = offset;
+});
+
+// Scroll to top when progress indicator is clicked
+document.addEventListener('DOMContentLoaded', function() {
+    const scrollProgress = document.querySelector('.scroll-progress');
+    
+    if (scrollProgress) {
+        scrollProgress.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Add cursor pointer style
+        scrollProgress.style.cursor = 'pointer';
+    }
 });
 
 // Animate elements on scroll
